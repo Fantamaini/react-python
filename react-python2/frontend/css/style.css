@@ -1,0 +1,275 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(223, 233, 255);
+}
+
+header{
+    background-color: aliceblue;
+    position: relative;
+    height: 80px;
+}
+header>*{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin: 0 30px 0 30px;
+}
+header  img{
+    width: 50px;
+  
+
+}
+
+.commentaires img{
+    width: 50px;
+  border: 100px;
+}
+header>ul{
+    right: 0;
+    text-decoration: none;
+}
+header,
+header a {
+    color: blueviolet;
+}
+
+
+header a:nth-child(2){
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+header>ul li{
+    margin: 10px;
+    font-weight: 600;
+    display: inline-block;
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+}
+header>ul li:hover{
+    background-color: rgba(0,0,0.1);
+}
+.bienvenue {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 100px;
+ margin: 20px;
+}
+.bienvenue>img{
+width: 500px;
+align-self: center;
+
+border-radius: 50px;
+}
+
+.bienvenue>.texte {
+width: 500px;
+margin-left: 20px;
+}
+.texte p{
+    text-align: justify;
+    font-size: 20px;
+    margin-right: 2cm;
+}
+.page-main{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.separator{
+    height: 3px;
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 20px 0;
+}
+.title-category{
+    text-align: center;
+}
+.a-propos {
+    margin-bottom: 100px;
+}
+
+.picture-propos {
+    width: 100%;
+height: 500px;
+background-image: url("../img/team.jpeg");
+background-size: cover;
+border-radius: 5px;
+position: relative;
+}
+.infos-picture-propos {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    border-radius: 5px;
+}
+.button{
+    background-color: rgb(202, 146, 255);
+    border-radius: 100px;
+height: 1cm;
+}
+.div{
+    margin-left: 2cm;
+}
+form{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 1cm;
+    font-weight: bold;
+}
+.picture-propos-text p{
+    font-size: 20px;
+    text-align: justify;
+}
+.picture-propos-text{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+} 
+
+.comentaire{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.commentaire-pp{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.commentaire-text{
+    margin-left: 20px;
+}
+.commentaire-text p{
+    text-align: justify;
+}
+footer{
+    height: 80px;
+    position: relative;
+    background-color: aliceblue;
+}
+footer h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.loader{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index: 99;
+    background-color: #b6ccff;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+}
+.loader p {
+color:rgb(243, 237, 237);
+font-size: 30px;
+font-weight: 600;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.form-top{
+    margin-left: 0;
+  
+}
+input:not(input[type="submit"]), textarea{
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    resize:none;
+    outline: none;
+    font-family: "Montserrat";
+    width: 30vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+label{
+    margin-bottom: 10px;
+    font-weight:600;
+    font-size: 20px;
+}
+.form-top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+  
+
+}
+.form-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.form-left>div * {
+    display: block;
+}
+.form-right * {
+display: block;
+}
+.form-contact input[type="submit"]{
+    background-color:rgb(205, 115, 115);
+    border-radius: 20px;
+border: none;
+padding: 10px;
+font-weight: 600;
+font-size: 20px;
+color: white;
+font-family: "Montserrat";
+box-shadow: 0px 0px 5px rgba(0,0,0.5);
+margin-bottom: 80px;
+cursor: pointer;
+transition: transform 0.5% ease-in-out;
+}
+.form-contact input[ type="submit"]:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:1100px){
+    .bienvenue>img {
+        width: 300px;
+    }
+
+    .texte p{
+        font-size: 16px;
+    }
+.texte h1{
+    font-size: 20px;
+
+}
+.bienvenue {
+    margin-bottom: 50px;
+}
+.a-propos{
+    margin-bottom: 100px;
+
+}
+.title-category{ 
+    text-align: center;
+}
+.picture-propos{
+    width: 100%;
+    height: 300px;
+}
+.picture-propos-text{
+    margin: 10px;
+}
+.picture-propos-text p {
+    font-size: 16px;
+}
+.picture-propos-text h3{
+    font-size: 20px;
+}
+}
+

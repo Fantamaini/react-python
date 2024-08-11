@@ -1,0 +1,54 @@
+body{
+    background-color: aliceblue;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+.p{
+ text-align: right;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.pa{
+    margin-left: 1.1cm;
+}
+
+button {
+    background-color:rgb(202, 146, 255);
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 0.3cm;
+    height: 1cm;
+
+}
+
+.text{
+    color: rgb(97, 97, 97);
+}
+.bko{
+    color: blueviolet;
+}
+.head{
+    text-align: center;
+    margin-top: 2cm;
+}
+.h3{
+    font-weight: 400;
+}
